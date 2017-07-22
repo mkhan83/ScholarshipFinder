@@ -1,0 +1,62 @@
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { Navbar, Nav, NavItem, Jumbotron, NavDropdown, Button, MenuItem, FormGroup, FormControl } from 'react-bootstrap';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Navbar>
+          <Nav bsStyle="tabs" activeKey={1}>
+            <NavItem eventKey={3} href="#" >About</NavItem>
+            <NavItem eventKey={3} href="#" >Services</NavItem>
+            <NavItem eventKey={3} href="#" >Contact</NavItem>
+          </Nav>
+        </Navbar>
+
+        <Navbar>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href="#">Scholarship</a>
+            </Navbar.Brand>
+            <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+            <Navbar.Form pullLeft>
+              <FormGroup>
+                <FormControl type="text" placeholder="Search" />
+              </FormGroup>
+              {' '}
+              <Button type="Find Scholarship">Find Scholarship</Button>
+            </Navbar.Form>
+          </Navbar.Collapse>
+        </Navbar>
+      <h1>State Scholarships</h1>
+      <br></br>
+
+      const Navigation = () => {
+    return (
+        <section>
+            <App />
+            <ul>
+                <li>{'Home'}</li>
+                <li>
+                    <Link to="/contact">{'Contact'}</Link>
+                </li>
+                <li>
+                    <Link to="/about">{'About'}</Link>
+                </li>
+            </ul>
+        </section>
+    );
+};
+        <div>
+          
+        </div>
+      </div >
+
+    );
+  }
+}
+export default App;
