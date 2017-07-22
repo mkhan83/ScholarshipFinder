@@ -40,15 +40,15 @@ class App extends Component {
     if (results) {
       listItems = results.map((scholarship) =>
         <ListGroupItem>
-          {scholarship.title}
+          <strong>Name: </strong> {scholarship.title}
           <div>
-            {scholarship.amount}
+          <strong>Amount: </strong> ${scholarship.amount}
           </div>
           <div>
-            {scholarship.description}
+         <strong>Description:</strong>  {scholarship.description}
           </div>
           <div>
-            <a href={scholarship.link}>{scholarship.link}</a>
+          <strong>Link:</strong>  <a href={scholarship.link}>{scholarship.link}</a>
           </div>
         </ListGroupItem>
 
